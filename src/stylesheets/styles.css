@@ -19,12 +19,25 @@ button:hover{
 
 .main{
     display: grid;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 15vh 85vh;
+}
+
+.header{
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    padding-left: 30px;
+}
+
+.headerText{
+    color: whitesmoke;
 }
 
 .mainContent{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -34,6 +47,28 @@ button:hover{
     border-bottom: 1px solid;
     width: fit-content;
     padding-bottom: 5px;
+    margin-top: 5%;
+}
+
+.city{
+    align-self: flex-start;
+    justify-self: flex-start;
+    margin-left: 10px;
+    margin-bottom: -15%;
+    font-size: xx-large;
+}
+
+.weatherStats{
+    border-style: none;
+    align-self: flex-start;
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 25vh;
+}
+
+.weatherStats > *{
+    margin-left: 10px;
 }
 
 #searchInput{
@@ -41,6 +76,7 @@ button:hover{
     min-height: 25px;
     border-style: none;
     font-size: large;
+    color:  rgb(77, 77, 77);
 }
 
 #searchInput:focus{
