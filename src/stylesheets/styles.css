@@ -51,11 +51,12 @@ button:hover{
 }
 
 .city{
+    display: flex;
     align-self: flex-start;
     justify-self: flex-start;
     margin-left: 10px;
     margin-bottom: -15%;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .weatherStats{
@@ -86,4 +87,12 @@ button:hover{
 #btnImg{
     max-width: 30px;
     max-height: 30px;
+}
+
+#condImg{
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    right: 100px;
+    top: 280px;
 }
