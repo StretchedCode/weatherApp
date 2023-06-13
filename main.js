@@ -135,7 +135,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// module that facilitates receiving all of the data from the WeatherAPI\n\nasync function getWeather(query) {\n  const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=593c4e658973493595534108231206&q=${query}`, { mode: 'cors' });\n  const weatherData = await response.json();\n\n  return weatherData;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getWeather);\n\n\n//# sourceURL=webpack://weatherapp/./src/functions/weather.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// module that facilitates receiving all of the data from the WeatherAPI\n\nasync function getWeather(query) {\n  const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=593c4e658973493595534108231206&q=${query}`);\n  const weatherData = await response.json();\n\n  return weatherData;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getWeather);\n\n\n//# sourceURL=webpack://weatherapp/./src/functions/weather.js?");
 
 /***/ }),
 
